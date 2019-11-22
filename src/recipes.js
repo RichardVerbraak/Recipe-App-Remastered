@@ -6,7 +6,7 @@ let recipes = []
 
 const getSavedRecipes = () => {
     const recipesJSON = localStorage.getItem('recipes')
-    console.log(recipesJSON)
+    
     try {
         return recipesJSON ? JSON.parse(recipesJSON) : []
     } catch(e) {
