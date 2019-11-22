@@ -14,9 +14,8 @@ document.querySelector(".search-field").addEventListener("input", (e) => {
     renderRecipes()
 })
 
-// Add recipe button
+// Creates the recipe and gets the hash from its return value to passs in to edit URL
 document.querySelector(".add-recipe").addEventListener("click", (e) => {
-    // Add the input from the other page in as argument
     const id = createRecipe()    
-    // location.assign(`edit.html#${id}`)
+    location.assign(`/edit.html#${id}`)
 })

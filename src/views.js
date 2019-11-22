@@ -1,4 +1,4 @@
-import  { getSavedRecipes, getRecipes, saveRecipes } from './recipes'
+import  { getRecipes, saveRecipes } from './recipes'
 import { getFilters } from './filters'
 import { renderIngredients } from './ingredients'
 
@@ -107,7 +107,7 @@ const deleteRecipe = () => {
         saveRecipes()        
     }    
 
-    location.assign("index.html")
+    location.assign("/index.html")
 }
 
 
