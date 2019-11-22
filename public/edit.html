@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Handlee|Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Edit Recipe</title>
+    </head>
+    
+    <body class="container">
+
+        <header class="edit-title">            
+            <h1>Recipe App</h1>
+        </header>
+        
+        <div class="homepage">
+            <a class="save" href="index.html">Homepage</a>
+        </div>
+
+        <main class="title-steps-container">
+            <div class="recipe-header">
+                <input class="recipe-name" type="text" placeholder="Give the recipe a name!">
+            </div>
+                    
+            <div class="steps-container">
+                <textarea class="instructions-area" name="steps" id="" cols="30" rows="10"></textarea>
+            </div>
+        </main>
+        
+        <section class="ingredients-title">
+            <h1>Ingredients</h1>
+        </section>
+        
+        <section class="ingredients">
+            <div class="ingredient-list">
+    
+            </div>
+        </section>
+
+        <section class="add-ingredients">
+            <form class="ingredient-form">
+                <input class="ingredient-input" type="text" placeholder="Add Ingredient">                    
+            </form>
+            <button class="add-ingredient-button">Add Ingredient</button>
+        </section>
+
+        <aside class="danger-zone">
+            <div class="danger-title">
+                <h2>Danger Zone!</h2>
+            </div>
+
+            <div class="danger-button">
+                <button class="delete-recipe">Delete Recipe</button>     
+            </div>            
+                   
+        </aside>
+
+        <script src="/scripts/edit-bundle.js"></script>
+    </body>
+
+</html>

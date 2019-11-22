@@ -1,0 +1,302 @@
+/*
+
+BEM (block, element, modifier)
+
+Block      ->  house
+Element    ->  house__kitchen
+Modifier   ->  house--condo
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    font-size: 1.6rem;
+    font-family: 'Handlee', cursive;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.content-container {
+    margin-bottom: 3rem;
+}
+
+#header,
+#search,
+#recipes,
+.add-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.homepage-title,
+.edit-title {
+    color: salmon;
+    font-size: 3.5rem;
+    letter-spacing: 18px;
+    padding: 1.5rem 0;
+}
+
+#recipes {
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    /* margin-bottom: 1.7rem; */
+}
+
+
+/* List items */
+
+.empty-message {
+    color: salmon;
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding: 1.5rem;
+    margin: 1.5rem 0;    
+    letter-spacing: 6px;
+}
+
+.list-item {
+    display: block;    
+    color: salmon;
+    border: 2px solid salmon;
+    border-radius: 7px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    transition: background .3s ease;
+    width: 425px;
+}
+
+.list-item__title {
+    font-size: 1.6rem;    
+    font-weight: 400;    
+    letter-spacing: 2px;
+    margin-bottom: 5px;       
+}
+
+.list-item__subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+a {
+    color: salmon;
+    text-decoration: none;
+}
+
+/* Search field */
+
+.search-field {
+    border: 1px solid salmon;
+    border-radius: 5px;
+    padding: 0.4rem;
+}
+
+/* Button */
+
+
+.add-recipe {
+    color: white;
+    background: salmon;
+    font-family: 'Handlee', cursive;
+    border: 2px solid rgb(247, 125, 125);
+    border-radius: 9px;
+    padding: 0.7rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 2px;       
+}
+
+.add-recipe:hover {
+    background-color: rgb(252, 74, 54);
+}
+
+
+/***** EDIT PAGE *****/
+
+
+
+/* Header & Homepage */
+
+.edit-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+/* Input & Textarea */
+
+.title-steps-container {
+    margin: 1rem;
+}
+
+.recipe-header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2.5rem;
+}
+
+.recipe-header input {
+    font-family: 'Handlee', cursive;
+    font-size: 2.5rem;
+    color: salmon;
+    text-align: center;
+    padding: 0.8rem;    
+    width: 38rem;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.steps-container textarea {
+    font-family: 'Handlee', cursive;
+    font-size: 1.4rem;
+    color: rgb(253, 90, 71);
+    resize: vertical;
+    overflow: auto;
+    width: 52rem;
+    height: 19rem;
+}
+
+/* Ingredient items */
+
+.ingredients-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 4rem;
+}
+
+.ingredients-title h1 {
+    color: salmon;
+    letter-spacing: 6px;
+}
+
+.empty-message__ingredients {
+    color: salmon;
+    font-family: 'Handlee', cursive;
+    font-size: 2rem;
+    letter-spacing: 6px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.ingredients {
+    margin: 1rem;
+}
+
+.ingredient-list label {
+    color: salmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.7rem;    
+}
+
+.ingredient-item__container input {
+    margin-right: 10px;
+}
+
+.ingredient-name {
+    font-size: 2.2rem;
+}
+
+.remove-ingredient {    
+    color: white;
+    background: salmon;
+    font-family: 'Handlee', cursive;
+    border: 2px solid rgb(247, 125, 125);
+    border-radius: 9px;
+    padding: 0.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.remove-ingredient:hover {
+    background: rgb(206, 29, 9);
+}
+
+/* Add ingredients */
+
+.add-ingredients {
+    margin: 3rem 1rem;
+}
+
+.ingredient-form {
+    margin: 0 1.7rem;
+}
+
+.ingredient-input {
+    font-family: 'Handlee', cursive;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 15rem;
+}
+
+.add-ingredient-button {
+    color: white;
+    background: salmon;
+    font-family: 'Handlee', cursive;
+    font-size: 1.4rem;
+    width: 13rem;
+    border: 2px solid rgb(247, 125, 125);
+    border-radius: 8px;
+    margin: 1.7rem;
+    padding: 0.4rem;
+}
+
+/* Danger Zone */
+
+.danger-zone {
+    margin: 1rem;
+}
+
+.danger-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+    color: rgb(206, 29, 9);
+    letter-spacing: 8px;
+}
+
+.delete-recipe {
+    margin: 1.7rem;
+    color: white;
+    background: salmon;
+    font-family: 'Handlee', cursive;
+    border: 2px solid rgb(247, 125, 125);
+    border-radius: 9px;
+    padding: 0.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.delete-recipe:hover {
+    background: rgb(206, 29, 9);
+}
